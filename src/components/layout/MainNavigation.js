@@ -8,10 +8,10 @@ const MainNavigation = () => {
       <div className={styles.nav}>
         <ul>
           <li>
-            <NavLink to="/quotes"> All Quotes</NavLink>
+            <NavLink activeClassName={styles.active} to="/quotes"> All Quotes</NavLink>
           </li>
           <li>
-            <NavLink to="/addQuote">Add a Quote</NavLink>
+            <NavLink activeClassName={styles.active} to="/addQuote">Add a Quote</NavLink>
           </li>
         </ul>
       </div>
