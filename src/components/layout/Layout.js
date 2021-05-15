@@ -1,6 +1,7 @@
 import { Redirect, Route, Switch } from "react-router";
 import AddQuote from "../pages/AddQuote";
 import AllQuotes from "../pages/AllQuotes";
+import NotFound from "../pages/NotFound";
 import QuoteDetail from "../pages/QuoteDetail";
 import styles from "./Layout.module.css";
 import MainNavigation from "./MainNavigation";
@@ -22,6 +23,9 @@ const Layout = () => {
           </Route>
           <Route path="/quotes/:id">
             <QuoteDetail />
+          </Route>
+          <Route path='*'>
+              <NotFound/>
           </Route>
         </Switch>
       </main>
